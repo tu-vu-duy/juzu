@@ -505,6 +505,7 @@
     <module>booking</module>
     <module>doc</module>
     <module>distrib</module>
+    <module>test-juzu</module>
   </modules>
 
   <profiles>
