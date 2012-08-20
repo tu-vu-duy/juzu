@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2011 eXo Platform SAS.
+ * Copyright (C) 2012 eXo Platform SAS.
  *
  * This is free software; you can redistribute it and/or modify it
  * under the terms of the GNU Lesser General Public License as
@@ -19,42 +19,39 @@
 
 package http.ajax;
 
-import org.juzu.Controller;
-import org.juzu.Resource;
-import org.juzu.Response;
-import org.juzu.View;
-import org.juzu.asset.Asset;
-import org.juzu.asset.AssetLocation;
+import juzu.Controller;
+import juzu.Resource;
+import juzu.Response;
+import juzu.View;
+import juzu.asset.Asset;
+import juzu.asset.AssetLocation;
 
 /** @author <a href="mailto:julien.viet@exoplatform.com">Julien Viet</a> */
-public class A extends Controller
-{
-   
-   @View
-   public Response.Content index(String p)
-   {
-      String content =
-         "<script>\n" +
-         "$(function() {\n" +
-         "  $('#trigger').click(function() {\n" +
-         "    $.ajax({\n" +
-         "      url:'" + A_.resourceURL() + "',\n" +
-         "      async: false,\n" +
-         "      success: function(html) {\n" +
-         "        $('#foo').html(html);\n" +
-         "      }\n" +
-         "    });\n" +
-         "  });\n" +
-         "});\n" +
-         "</script>\n" +
-         "<a id='trigger' href='#'>click</a>\n" +
-         "<div id='foo'>foo</div>";
-      return Response.render(content).addScript(Asset.uri(AssetLocation.SERVER, "/jquery.js"));
-   }
-   
-   @Resource 
-   public Response.Content.Resource resource()
-   {
-      return Response.ok("bar");
-   }
+public class A extends Controller {
+
+  @View
+  public Response.Content index(String p) {
+    String content =
+      "<script>\n" +
+        "$(function() {\n" +
+        "  $('#trigger').click(function() {\n" +
+        "    $.ajax({\n" +
+        "      url:'" + A_.resourceURL() + "',\n" +
+        "      async: false,\n" +
+        "      success: function(html) {\n" +
+        "        $('#foo').html(html);\n" +
+        "      }\n" +
+        "    });\n" +
+        "  });\n" +
+        "});\n" +
+        "</script>\n" +
+        "<a id='trigger' href='#'>click</a>\n" +
+        "<div id='foo'>foo</div>";
+    return Response.render(content).addScript(Asset.uri(AssetLocation.SERVER, "jquery.js"));
+  }
+
+  @Resource
+  public Response.Content resource() {
+    return Response.ok("bar");
+  }
 }

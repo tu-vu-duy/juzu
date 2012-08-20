@@ -4,18 +4,19 @@
 
   <parent>
     <groupId>org.juzu</groupId>
-    <artifactId>juzu-reference-parent</artifactId>
-    <version>0.5-SNAPSHOT</version>
+    <artifactId>juzu-doc-reference-parent</artifactId>
+    <version>0.6.0-SNAPSHOT</version>
   </parent>
 
   <groupId>org.juzu</groupId>
-  <artifactId>juzu-reference-guide</artifactId>
-  <version>0.5-SNAPSHOT</version>
+  <artifactId>juzu-doc-reference-guide</artifactId>
+  <version>0.6.0-SNAPSHOT</version>
 
   <name>Juzu Reference Guide</name>
   <description>The reference guide</description>
 
   <properties>
+    <juzu.version>${project.version}</juzu.version>
     <wikbook.source>${pom.basedir}/src/main/wikbook</wikbook.source>
     <wikbook.target>${project.build.directory}/wikbook</wikbook.target>
   </properties>
@@ -24,13 +25,13 @@
     <dependency>
       <groupId>org.juzu</groupId>
       <artifactId>juzu-core</artifactId>
-      <version>0.5-SNAPSHOT</version>
+      <version>0.6.0-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.juzu</groupId>
       <artifactId>juzu-core</artifactId>
       <classifier>sources</classifier>
-      <version>0.5-SNAPSHOT</version>
+      <version>0.6.0-SNAPSHOT</version>
     </dependency>
 
     <dependency>

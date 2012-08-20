@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2011 eXo Platform SAS.
+ * Copyright (C) 2012 eXo Platform SAS.
  *
  * This is free software; you can redistribute it and/or modify it
  * under the terms of the GNU Lesser General Public License as
@@ -19,7 +19,7 @@
 
 package org.sample.booking.controllers;
 
-import org.juzu.SessionScoped;
+import juzu.SessionScoped;
 
 import javax.inject.Named;
 import java.io.Serializable;
@@ -27,24 +27,20 @@ import java.io.Serializable;
 /** @author <a href="mailto:julien.viet@exoplatform.com">Julien Viet</a> */
 @Named("login")
 @SessionScoped
-public class Login implements Serializable
-{
+public class Login implements Serializable {
 
-   /** . */
-   private String userName;
+  /** . */
+  private String userName;
 
-   public boolean isConnected()
-   {
-      return userName != null;
-   }
+  public boolean isConnected() {
+    return userName != null;
+  }
 
-   public String getUserName()
-   {
-      return userName;
-   }
+  public String getUserName() {
+    return userName;
+  }
 
-   public void setUserName(String userName)
-   {
-      this.userName = userName;
-   }
+  public void setUserName(String userName) {
+    this.userName = userName;
+  }
 }

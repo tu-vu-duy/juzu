@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2011 eXo Platform SAS.
+ * Copyright (C) 2012 eXo Platform SAS.
  *
  * This is free software; you can redistribute it and/or modify it
  * under the terms of the GNU Lesser General Public License as
@@ -18,10 +18,9 @@
  */
 
 @Application()
-@Assets(scripts = @Script(src = "test.js", location = AssetLocation.CLASSPATH))
-package plugin.asset.location.relativeclasspath;
+@Assets(scripts = @Script(src = "test.js", location = AssetLocation.CLASSPATH)) package plugin.asset.location.relativeclasspath;
 
-import org.juzu.Application;
-import org.juzu.asset.AssetLocation;
-import org.juzu.plugin.asset.Assets;
-import org.juzu.plugin.asset.Script;
+import juzu.Application;
+import juzu.asset.AssetLocation;
+import juzu.plugin.asset.Assets;
+import juzu.plugin.asset.Script;

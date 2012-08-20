@@ -3,10 +3,17 @@ Juzu is a web framework based on MVC concepts for developing Portlet application
 open source project developed on GitHub [[project>>https://github.com/juzu/juzu]] licensed under the
 [[LGPL 2.1>>http://www.gnu.org/licenses/lgpl-2.1.html]] license.
 
+= Build and deploy {{anchor id=builddeploy /}} =
 
-= Concepts {{anchor id=concepts /}} =
+{{include document=builddeploy.wiki/}}
 
-{{include document=concepts.wiki/}}
+= Request {{anchor id=request /}} =
+
+{{include document=request.wiki/}}
+
+= Responses {{anchor id=responses /}} =
+
+{{include document=responses.wiki/}}
 
 = Controllers {{anchor id=controllers /}} =
 
@@ -15,3 +22,27 @@ open source project developed on GitHub [[project>>https://github.com/juzu/juzu]
 = Inversion of Control {{anchor id=ioc /}} =
 
 {{include document=ioc.wiki/}}
+
+= Templating {{anchor id=templating /}} =
+
+{{include document=templating.wiki/}}
+
+= Templating SPI {{anchor id=templatespi /}} =
+
+{{include document=templatespi.wiki/}}
+
+= Taglib {{anchor id=taglib /}} =
+
+{{include document=taglib.wiki/}}
+
+= Assets {{anchor id=assets /}} =
+
+{{include document=assets.wiki/}}
+
+= Less plugin {{anchor id=plugins_less /}} =
+
+{{include document=plugins/less.wiki/}}
+
+= Portlet plugin {{anchor id=plugins_portlet /}} =
+
+{{include document=plugins/portlet.wiki/}}

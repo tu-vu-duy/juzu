@@ -4,7 +4,7 @@
 
   <groupId>org.juzu</groupId>
   <artifactId>juzu-parent</artifactId>
-  <version>0.5-SNAPSHOT</version>
+  <version>0.6.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>Juzu Web Framework</name>
@@ -66,135 +66,158 @@
       <dependency>
         <groupId>org.juzu</groupId>
         <artifactId>juzu-core</artifactId>
-        <version>0.5-SNAPSHOT</version>
+        <version>0.6.0-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.juzu</groupId>
         <artifactId>juzu-core</artifactId>
-        <classifier>source</classifier>
-        <version>0.5-SNAPSHOT</version>
+        <classifier>sources</classifier>
+        <version>0.6.0-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.juzu</groupId>
         <artifactId>juzu-core</artifactId>
         <type>test-jar</type>
-        <version>0.5-SNAPSHOT</version>
+        <version>0.6.0-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.juzu</groupId>
         <artifactId>juzu-core</artifactId>
         <classifier>javadoc</classifier>
-        <version>0.5-SNAPSHOT</version>
+        <version>0.6.0-SNAPSHOT</version>
       </dependency>
 
       <dependency>
         <groupId>org.juzu</groupId>
         <artifactId>juzu-archetype</artifactId>
-        <version>0.5-SNAPSHOT</version>
+        <version>0.6.0-SNAPSHOT</version>
       </dependency>
 
       <dependency>
         <groupId>org.juzu</groupId>
-        <artifactId>juzu-overlay-gatein</artifactId>
-        <type>war</type>
-        <version>0.5-SNAPSHOT</version>
-      </dependency>
-      <dependency>
-        <groupId>org.juzu</groupId>
-        <artifactId>juzu-overlay-liferay</artifactId>
-        <type>war</type>
-        <version>0.5-SNAPSHOT</version>
+        <artifactId>juzu-builder</artifactId>
+        <version>0.6.0-SNAPSHOT</version>
       </dependency>
 
       <dependency>
         <groupId>org.juzu</groupId>
         <artifactId>juzu-booking</artifactId>
-        <version>0.5-SNAPSHOT</version>
+        <version>0.6.0-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.juzu</groupId>
         <artifactId>juzu-booking</artifactId>
-        <classifier>source</classifier>
-        <version>0.5-SNAPSHOT</version>
+        <classifier>sources</classifier>
+        <version>0.6.0-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.juzu</groupId>
         <artifactId>juzu-booking</artifactId>
         <classifier>gatein</classifier>
         <type>war</type>
-        <version>0.5-SNAPSHOT</version>
+        <version>0.6.0-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.juzu</groupId>
         <artifactId>juzu-booking</artifactId>
         <type>war</type>
         <classifier>liferay</classifier>
-        <version>0.5-SNAPSHOT</version>
+        <version>0.6.0-SNAPSHOT</version>
       </dependency>
 
       <dependency>
         <groupId>org.juzu</groupId>
         <artifactId>juzu-plugins-less</artifactId>
-        <version>0.5-SNAPSHOT</version>
+        <version>0.6.0-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.juzu</groupId>
         <artifactId>juzu-plugins-less</artifactId>
-        <classifier>source</classifier>
-        <version>0.5-SNAPSHOT</version>
+        <classifier>sources</classifier>
+        <version>0.6.0-SNAPSHOT</version>
       </dependency>
 
       <dependency>
         <groupId>org.juzu</groupId>
-        <artifactId>juzu-tutorial-examples</artifactId>
-        <version>0.5-SNAPSHOT</version>
+        <artifactId>juzu-plugins-portlet</artifactId>
+        <version>0.6.0-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.juzu</groupId>
-        <artifactId>juzu-tutorial-examples</artifactId>
-        <version>0.5-SNAPSHOT</version>
+        <artifactId>juzu-plugins-portlet</artifactId>
+        <classifier>sources</classifier>
+        <version>0.6.0-SNAPSHOT</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.juzu</groupId>
+        <artifactId>juzu-templating-mustache</artifactId>
+        <version>0.6.0-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>org.juzu</groupId>
+        <artifactId>juzu-templating-mustache</artifactId>
+        <classifier>sources</classifier>
+        <version>0.6.0-SNAPSHOT</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.juzu</groupId>
+        <artifactId>juzu-doc-tutorial-examples</artifactId>
+        <version>0.6.0-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>org.juzu</groupId>
+        <artifactId>juzu-doc-tutorial-examples</artifactId>
+        <version>0.6.0-SNAPSHOT</version>
         <classifier>sources</classifier>
       </dependency>
       <dependency>
         <groupId>org.juzu</groupId>
-        <artifactId>juzu-tutorial-examples</artifactId>
+        <artifactId>juzu-doc-tutorial-examples</artifactId>
         <classifier>gatein</classifier>
         <type>war</type>
-        <version>0.5-SNAPSHOT</version>
+        <version>0.6.0-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.juzu</groupId>
-        <artifactId>juzu-tutorial-examples</artifactId>
+        <artifactId>juzu-doc-tutorial-examples</artifactId>
         <type>war</type>
         <classifier>liferay</classifier>
-        <version>0.5-SNAPSHOT</version>
+        <version>0.6.0-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.juzu</groupId>
-        <artifactId>juzu-tutorial-guide</artifactId>
+        <artifactId>juzu-doc-tutorial-guide</artifactId>
         <classifier>html</classifier>
         <type>zip</type>
-        <version>0.5-SNAPSHOT</version>
+        <version>0.6.0-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.juzu</groupId>
-        <artifactId>juzu-tutorial-guide</artifactId>
+        <artifactId>juzu-doc-tutorial-guide</artifactId>
         <type>pdf</type>
-        <version>0.5-SNAPSHOT</version>
+        <version>0.6.0-SNAPSHOT</version>
       </dependency>
 
       <dependency>
         <groupId>org.juzu</groupId>
-        <artifactId>juzu-reference-guide</artifactId>
+        <artifactId>juzu-doc-reference-guide</artifactId>
         <classifier>html</classifier>
         <type>zip</type>
-        <version>0.5-SNAPSHOT</version>
+        <version>0.6.0-SNAPSHOT</version>
       </dependency>
       <dependency>
         <groupId>org.juzu</groupId>
-        <artifactId>juzu-reference-guide</artifactId>
+        <artifactId>juzu-doc-reference-api</artifactId>
+        <classifier>javadoc</classifier>
+        <version>0.6.0-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>org.juzu</groupId>
+        <artifactId>juzu-doc-reference-guide</artifactId>
         <type>pdf</type>
-        <version>0.5-SNAPSHOT</version>
+        <version>0.6.0-SNAPSHOT</version>
       </dependency>
 
       <dependency>
@@ -220,15 +243,70 @@
       </dependency>
 
       <dependency>
+        <groupId>com.github.spullara.mustache.java</groupId>
+        <artifactId>compiler</artifactId>
+        <version>0.8.0</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.guava</groupId>
+        <artifactId>guava</artifactId>
+        <version>12.0</version>
+        <exclusions>
+          <exclusion>
+            <groupId>com.google.code.findbugs</groupId>
+            <artifactId>jsr305</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+
+      <dependency>
         <groupId>org.jboss.weld</groupId>
         <artifactId>weld-core</artifactId>
-        <version>1.1.4.Final</version>
+        <version>1.1.8.Final</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-ext</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>ch.qos.cal10n</groupId>
+            <artifactId>cal10n-api</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>javax.annotation</groupId>
+            <artifactId>jsr250-api</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.javassist</groupId>
+            <artifactId>javassist</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>org.glassfish.web</groupId>
+        <artifactId>el-impl</artifactId>
+        <version>2.1.2-b04</version>
+      </dependency>
+      <dependency>
+        <groupId>org.javassist</groupId>
+        <artifactId>javassist</artifactId>
+        <version>3.14.0-GA</version>
       </dependency>
 
       <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-core</artifactId>
         <version>3.1.1.RELEASE</version>
+        <exclusions>
+          <exclusion>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.springframework</groupId>
@@ -239,6 +317,12 @@
         <groupId>org.springframework</groupId>
         <artifactId>spring-web</artifactId>
         <version>3.1.1.RELEASE</version>
+        <exclusions>
+          <exclusion>
+            <groupId>aopalliance</groupId>
+            <artifactId>aopalliance</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
 
       <dependency>
@@ -262,11 +346,22 @@
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-ext</artifactId>
         <version>1.5.10</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-simple</artifactId>
         <version>1.5.10</version>
+      </dependency>
+      <dependency>
+        <groupId>ch.qos.cal10n</groupId>
+        <artifactId>cal10n-api</artifactId>
+        <version>0.7.2</version>
       </dependency>
 
       <dependency>
@@ -274,68 +369,147 @@
         <artifactId>junit</artifactId>
         <version>4.8.2</version>
       </dependency>
+
+      <!-- Arquillian/Shrinkwrap stack -->
+      <dependency>
+        <groupId>org.jboss.arquillian.container</groupId>
+        <artifactId>arquillian-container-spi</artifactId>
+        <version>1.0.0.CR7</version>
+      </dependency>
       <dependency>
         <groupId>org.jboss.arquillian.junit</groupId>
         <artifactId>arquillian-junit-container</artifactId>
-        <version>1.0.0.CR4</version>
+        <version>1.0.0.CR7</version>
       </dependency>
       <dependency>
         <groupId>org.jboss.weld</groupId>
         <artifactId>weld-core-test-arquillian</artifactId>
-        <version>1.1.4.Final</version>
+        <version>1.1.8.Final</version>
       </dependency>
       <dependency>
         <groupId>org.jboss.shrinkwrap</groupId>
         <artifactId>shrinkwrap-api</artifactId>
-        <version>1.0.0-beta-3</version>
+        <version>1.0.0-cr-1</version>
       </dependency>
       <dependency>
         <groupId>org.jboss.shrinkwrap</groupId>
         <artifactId>shrinkwrap-impl-base</artifactId>
-        <version>1.0.0-beta-3</version>
+        <version>1.0.0-cr-1</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.shrinkwrap.resolver</groupId>
+        <artifactId>shrinkwrap-resolver-api-maven</artifactId>
+        <version>2.0.0-alpha-1</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.shrinkwrap.resolver</groupId>
+        <artifactId>shrinkwrap-resolver-impl-maven</artifactId>
+        <version>2.0.0-alpha-1</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.arquillian.extension</groupId>
+        <artifactId>arquillian-drone-impl</artifactId>
+        <version>1.0.0.CR4</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.arquillian.extension</groupId>
+        <artifactId>arquillian-drone-selenium</artifactId>
+        <version>1.0.0.CR4</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.arquillian.extension</groupId>
+        <artifactId>arquillian-drone-webdriver</artifactId>
+        <version>1.0.0.CR4</version>
+      </dependency>
+      <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>2.20.0</version>
+      </dependency>
+      <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-htmlunit-driver</artifactId>
+        <version>2.20.0</version>
       </dependency>
 
-    <dependency>
-      <groupId>org.jboss.arquillian.container</groupId>
-      <artifactId>arquillian-tomcat-embedded-6</artifactId>
-      <version>1.0.0.CR1</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.tomcat</groupId>
-      <artifactId>catalina</artifactId>
-      <version>6.0.29</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.tomcat</groupId>
-      <artifactId>coyote</artifactId>
-      <version>6.0.29</version>
-    </dependency>
-    <dependency>
-      <groupId>org.apache.tomcat</groupId>
-      <artifactId>jasper</artifactId>
-      <version>6.0.29</version>
-    </dependency>
-    <dependency>
-      <groupId>net.sourceforge.htmlunit</groupId>
-      <artifactId>htmlunit</artifactId>
-      <version>2.9</version>
-    </dependency>
+      <!-- Jetty stack -->
+      <dependency>
+        <groupId>org.jboss.arquillian.container</groupId>
+        <artifactId>arquillian-jetty-embedded-7</artifactId>
+        <version>1.0.0.CR1</version>
+      </dependency>
+      <dependency>
+        <groupId>org.eclipse.jetty</groupId>
+        <artifactId>jetty-webapp</artifactId>
+        <version>7.0.2.v20100331</version>
+      </dependency>
+      <dependency>
+        <groupId>org.eclipse.jetty</groupId>
+        <artifactId>jetty-plus</artifactId>
+        <version>7.0.2.v20100331</version>
+      </dependency>
+      <dependency>
+        <groupId>org.mortbay.jetty</groupId>
+        <artifactId>jsp-2.1-glassfish</artifactId>
+        <version>2.1.v20100127</version>
+      </dependency>
 
-    <dependency>
-      <groupId>org.jboss.arquillian.container</groupId>
-      <artifactId>arquillian-jetty-embedded-7</artifactId>
-      <version>1.0.0.CR1</version>
-    </dependency>
-    <dependency>
-      <groupId>org.eclipse.jetty</groupId>
-      <artifactId>jetty-webapp</artifactId>
-      <version>7.0.0.v20091005</version>
-    </dependency>
-    <dependency>
-      <groupId>org.eclipse.jetty</groupId>
-      <artifactId>jetty-plus</artifactId>
-      <version>7.0.0.v20091005</version>
-    </dependency>
+      <!-- Portlet bridge testing -->
+      <dependency>
+        <groupId>org.jboss.arquillian.extension</groupId>
+        <artifactId>arquillian-portal-spi</artifactId>
+        <version>1.0.0.Alpha1</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.portletbridge.testing.pluto</groupId>
+        <artifactId>pluto-container</artifactId>
+        <version>1.0.0.Alpha1</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.portals.pluto</groupId>
+        <artifactId>pluto-portal-driver</artifactId>
+        <version>2.0.2</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.portals.pluto</groupId>
+        <artifactId>pluto-portal-driver-impl</artifactId>
+        <version>2.0.2</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.portals.pluto</groupId>
+        <artifactId>pluto-container-driver-api</artifactId>
+        <version>2.0.2</version>
+        <exclusions>
+          <exclusion>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>xerces</groupId>
+            <artifactId>xerces</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.portals.pluto</groupId>
+        <artifactId>pluto-taglib</artifactId>
+        <version>2.0.2</version>
+      </dependency>
+      <dependency>
+          <groupId>javax.ccpp</groupId>
+          <artifactId>ccpp</artifactId>
+          <version>1.0</version>
+      </dependency>
+      <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>jstl</artifactId>
+        <version>1.1.2</version>
+      </dependency>
+      <dependency>
+        <groupId>taglibs</groupId>
+        <artifactId>standard</artifactId>
+        <version>1.1.2</version>
+      </dependency>
 
       <dependency>
         <groupId>org.wikbook</groupId>
@@ -372,7 +546,7 @@
         </plugin>
         <plugin>
           <artifactId>maven-assembly-plugin</artifactId>
-          <version>2.2.1</version>
+          <version>2.3</version>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
@@ -463,7 +637,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-release-plugin</artifactId>
-          <version>2.1</version>
+          <version>2.2.1</version>
           <configuration>
             <!-- Avoid issues with signature plugin -->
             <mavenExecutorId>forked-path</mavenExecutorId>
@@ -499,9 +673,10 @@
   
   <modules>
     <module>core</module>
+    <module>templating</module>
     <module>plugins</module>
+    <module>builder</module>
     <module>archetype</module>
-    <module>overlay</module>
     <module>booking</module>
     <module>doc</module>
     <module>distrib</module>

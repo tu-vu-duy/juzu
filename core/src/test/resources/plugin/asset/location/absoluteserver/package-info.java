@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2011 eXo Platform SAS.
+ * Copyright (C) 2012 eXo Platform SAS.
  *
  * This is free software; you can redistribute it and/or modify it
  * under the terms of the GNU Lesser General Public License as
@@ -19,13 +19,12 @@
 
 @Application()
 @Assets(
-   scripts = @Script(id="jquery",src = "/jquery.js"),
-   stylesheets = {
-      @Stylesheet(src = "/main.css"),
-      @Stylesheet(src = "/main.less")})
-package plugin.asset.location.absoluteserver;
+  scripts = @Script(id = "jquery", src = "/juzu/jquery.js"),
+  stylesheets = {
+    @Stylesheet(src = "main.css"),
+    @Stylesheet(src = "main.less")}) package plugin.asset.location.absoluteserver;
 
-import org.juzu.Application;
-import org.juzu.plugin.asset.Assets;
-import org.juzu.plugin.asset.Script;
-import org.juzu.plugin.asset.Stylesheet;
+import juzu.Application;
+import juzu.plugin.asset.Assets;
+import juzu.plugin.asset.Script;
+import juzu.plugin.asset.Stylesheet;

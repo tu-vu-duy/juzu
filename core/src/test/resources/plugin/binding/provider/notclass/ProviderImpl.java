@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2011 eXo Platform SAS.
+ * Copyright (C) 2012 eXo Platform SAS.
  *
  * This is free software; you can redistribute it and/or modify it
  * under the terms of the GNU Lesser General Public License as
@@ -22,14 +22,12 @@ package plugin.binding.provider.notclass;
 import javax.inject.Provider;
 
 /** @author <a href="mailto:julien.viet@exoplatform.com">Julien Viet</a> */
-public enum ProviderImpl implements Provider
-{
+public enum ProviderImpl implements Provider {
 
-   FOO;
+  FOO;
 
 
-   public Object get()
-   {
-      throw new UnsupportedOperationException();
-   }
+  public Object get() {
+    throw new UnsupportedOperationException();
+  }
 }

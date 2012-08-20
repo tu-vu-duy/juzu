@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2011 eXo Platform SAS.
+ * Copyright (C) 2012 eXo Platform SAS.
  *
  * This is free software; you can redistribute it and/or modify it
  * under the terms of the GNU Lesser General Public License as
@@ -19,28 +19,26 @@
 
 package examples.tutorial.weather2;
 
-import org.juzu.Path;
-import org.juzu.View;
-import org.juzu.template.Template;
+import juzu.Path;
+import juzu.View;
+import juzu.template.Template;
 
 import javax.inject.Inject;
 import java.util.HashMap;
 import java.util.Map;
 
 /** @author <a href="mailto:julien.viet@exoplatform.com">Julien Viet</a> */
-public class Weather
-{
+public class Weather {
 
-   @Inject
-   @Path("index.gtmpl")
-   Template index;
+  @Inject
+  @Path("index.gtmpl")
+  Template index;
 
-   @View
-   public void index()
-   {
-      Map<String, Object> parameters = new HashMap<String, Object>();
-      parameters.put("location", "Marseille");
-      parameters.put("temperature", "20");
-      index.render(parameters);
-   }
+  @View
+  public void index() {
+    Map<String, Object> parameters = new HashMap<String, Object>();
+    parameters.put("location", "Marseille");
+    parameters.put("temperature", "20");
+    index.render(parameters);
+  }
 }

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2011 eXo Platform SAS.
+ * Copyright (C) 2012 eXo Platform SAS.
  *
  * This is free software; you can redistribute it and/or modify it
  * under the terms of the GNU Lesser General Public License as
@@ -19,23 +19,21 @@
 
 package plugin.binding.provider.factory.create;
 
-import org.juzu.Controller;
-import org.juzu.Response;
-import org.juzu.View;
+import juzu.Controller;
+import juzu.Response;
+import juzu.View;
 
 import javax.inject.Inject;
 import java.io.IOException;
 
 /** @author <a href="mailto:julien.viet@exoplatform.com">Julien Viet</a> */
-public class A extends Controller
-{
+public class A extends Controller {
 
-   @Inject
-   Service service;
+  @Inject
+  Service service;
 
-   @View
-   public Response.Content index() throws IOException
-   {
-      return Response.content(service != null ? "pass" : "");
-   }
+  @View
+  public Response.Content index() throws IOException {
+    return Response.ok(service != null ? "pass" : "");
+  }
 }

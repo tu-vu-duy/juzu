@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2011 eXo Platform SAS.
+ * Copyright (C) 2012 eXo Platform SAS.
  *
  * This is free software; you can redistribute it and/or modify it
  * under the terms of the GNU Lesser General Public License as
@@ -19,25 +19,22 @@
 
 package http.binary;
 
-import org.juzu.Resource;
-import org.juzu.Response;
-import org.juzu.View;
+import juzu.Resource;
+import juzu.Response;
+import juzu.View;
 
 import java.io.ByteArrayInputStream;
 
 /** @author <a href="mailto:alain.defrance@exoplatform.com">Alain Defrance</a> */
-public class A
-{
-   
-   @View
-   public Response.Content index(String p)
-   {
-      return Response.render("" + A_.resourceURL());
-   }
-   
-   @Resource 
-   public Response.Content resource()
-   {
-      return Response.ok("application/octet-stream", new ByteArrayInputStream("hello".getBytes()));
-   }
+public class A {
+
+  @View
+  public Response.Content index(String p) {
+    return Response.render("" + A_.resourceURL());
+  }
+
+  @Resource
+  public Response.Content resource() {
+    return Response.ok("application/octet-stream", new ByteArrayInputStream("hello".getBytes()));
+  }
 }

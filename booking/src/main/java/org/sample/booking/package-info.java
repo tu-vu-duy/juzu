@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2011 eXo Platform SAS.
+ * Copyright (C) 2012 eXo Platform SAS.
  *
  * This is free software; you can redistribute it and/or modify it
  * under the terms of the GNU Lesser General Public License as
@@ -20,20 +20,19 @@
 @Application(defaultController = org.sample.booking.controllers.Application.class)
 @Portlet
 @Assets(
-   scripts = {
-      @Script(id = "jquery", src = "/public/javascripts/jquery-1.7.1.min.js"),
-      @Script(src = "/public/javascripts/jquery-ui-1.7.2.custom.min.js", depends = "jquery"),
-      @Script(src = "/public/javascripts/booking.js", depends = "juzu.ajax")
-   },
-   stylesheets = {
-      @Stylesheet(src = "/public/stylesheets/main.css"),
-      @Stylesheet(src = "/public/ui-lightness/jquery-ui-1.7.2.custom.css")
-   }
-)
-package org.sample.booking;
+  scripts = {
+    @Script(id = "jquery", src = "public/javascripts/jquery-1.7.1.min.js"),
+    @Script(src = "public/javascripts/jquery-ui-1.7.2.custom.min.js", depends = "jquery"),
+    @Script(src = "public/javascripts/booking.js", depends = "juzu.ajax")
+  },
+  stylesheets = {
+    @Stylesheet(src = "public/stylesheets/main.css"),
+    @Stylesheet(src = "public/ui-lightness/jquery-ui-1.7.2.custom.css")
+  }
+) package org.sample.booking;
 
-import org.juzu.Application;
-import org.juzu.plugin.asset.Assets;
-import org.juzu.plugin.asset.Script;
-import org.juzu.plugin.asset.Stylesheet;
-import org.juzu.plugin.portlet.Portlet;
+import juzu.Application;
+import juzu.plugin.asset.Assets;
+import juzu.plugin.asset.Script;
+import juzu.plugin.asset.Stylesheet;
+import juzu.plugin.portlet.Portlet;

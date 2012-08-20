@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2011 eXo Platform SAS.
+ * Copyright (C) 2012 eXo Platform SAS.
  *
  * This is free software; you can redistribute it and/or modify it
  * under the terms of the GNU Lesser General Public License as
@@ -19,54 +19,45 @@
 
 package plugin.binding.scope;
 
-import org.juzu.Controller;
-import org.juzu.Response;
-import org.juzu.View;
+import juzu.Controller;
+import juzu.Response;
+import juzu.View;
 
 import javax.inject.Inject;
 import java.io.IOException;
 
 /** @author <a href="mailto:julien.viet@exoplatform.com">Julien Viet</a> */
-public class A extends Controller
-{
+public class A extends Controller {
 
-   /** .*/
-   private static int serial;
+  /** . */
+  private static int serial;
 
-   @Inject
-   Bean bean;
+  @Inject
+  Bean bean;
 
-   @View
-   public Response.Content index() throws IOException
-   {
-      if (bean != null)
-      {
-         serial = bean.getSerial();
-         return Response.content(A_.doneURL().toString());
-      }
-      else
-      {
-         return Response.content("");
-      }
-   }
+  @View
+  public Response.Content index() throws IOException {
+    if (bean != null) {
+      serial = bean.getSerial();
+      return Response.ok(A_.doneURL().toString());
+    }
+    else {
+      return Response.ok("");
+    }
+  }
 
-   @View
-   public Response.Content done() throws IOException
-   {
-      if (bean != null)
-      {
-         if (serial + 1 == bean.getSerial())
-         {
-            return Response.content("pass");
-         }
-         else
-         {
-            return Response.content("failure: was expecting to have" + serial + " + 1 == " + bean.getSerial());
-         }
+  @View
+  public Response.Content done() throws IOException {
+    if (bean != null) {
+      if (serial + 1 == bean.getSerial()) {
+        return Response.ok("pass");
       }
-      else
-      {
-         return Response.content("failure");
+      else {
+        return Response.ok("failure: was expecting to have" + serial + " + 1 == " + bean.getSerial());
       }
-   }
+    }
+    else {
+      return Response.ok("failure");
+    }
+  }
 }

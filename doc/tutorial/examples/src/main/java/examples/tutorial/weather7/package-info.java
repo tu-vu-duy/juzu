@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2011 eXo Platform SAS.
+ * Copyright (C) 2012 eXo Platform SAS.
  *
  * This is free software; you can redistribute it and/or modify it
  * under the terms of the GNU Lesser General Public License as
@@ -18,8 +18,7 @@
  */
 
 @Application
-@Portlet
-package examples.tutorial.weather7;
+@Portlet package examples.tutorial.weather7;
 
-import org.juzu.Application;
-import org.juzu.plugin.portlet.Portlet;
+import juzu.Application;
+import juzu.plugin.portlet.Portlet;

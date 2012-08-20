@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2011 eXo Platform SAS.
+ * Copyright (C) 2012 eXo Platform SAS.
  *
  * This is free software; you can redistribute it and/or modify it
  * under the terms of the GNU Lesser General Public License as
@@ -22,22 +22,19 @@ package plugin.binding.scope;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /** @author <a href="mailto:julien.viet@exoplatform.com">Julien Viet</a> */
-public class Bean
-{
+public class Bean {
 
-   /** . */
-   public static final AtomicInteger sequence = new AtomicInteger();
+  /** . */
+  public static final AtomicInteger sequence = new AtomicInteger();
 
-   /** . */
-   private final int serial;
+  /** . */
+  private final int serial;
 
-   public Bean()
-   {
-      this.serial = sequence.getAndIncrement();
-   }
+  public Bean() {
+    this.serial = sequence.getAndIncrement();
+  }
 
-   public int getSerial()
-   {
-      return serial;
-   }
+  public int getSerial() {
+    return serial;
+  }
 }
